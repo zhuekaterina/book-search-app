@@ -1,13 +1,21 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+@import url(./blocks/page/page.css);
+@import url(./blocks/header/header.css);
+@import url(./blocks/header/__title/header__title.css);
+@import url(./blocks/header/__subtitle/header__subtitle.css);
+@import url(./blocks/form-container/form-container.css);
+@import url(./blocks/search-form/search-form.css);
+@import url(./blocks/search-form/__field/search-form__field.css);
+@import url(./blocks/search-form/__button/search-form__button.css);
+@import url(./blocks/snippets-container/snippets-container.css);
+@import url(./blocks/snippet/snippet.css);
+@import url(./blocks/snippet/__cover/snippet__cover.css);
+@import url(./blocks/snippet/__name/snippet__name.css);
+@import url(./blocks/snippet/__author/snippet__author.css);
+@import url(./blocks/footer/footer.css);
+@import url(./blocks/footer/__copyright/footer__copyright.css);
+@import url(./blocks/popup-book/popup-book.css);
+@import url(./blocks/popup-book/_opened/popup__book_opened.css);
+@import url(./blocks/popup-book/__close-button/popup-book__close-button.css);
+@import url(./blocks/popup-book/__container/popup-book__container.css);
+@import url(./blocks/popup-book/__image/popup-book__image.css);
+@import url(./blocks/popup-book/__text/popup-book__text.css);

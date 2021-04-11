@@ -1,0 +1,22 @@
+.search-form__button {
+    background-image: url(../../../images/1485477207-magnifier_78608.svg);
+    width: 54px;
+    height: 56px;
+    border: none;
+    background-color: white;
+    background-size: 65%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 0px 5px 5px 0px;
+
+}
+
+.search-form__button:focus {
+    outline: none;
+}
+
+.search-form__button:hover {
+    transform: scale(1.13);
+    border-radius: 5px;
+    transition: 0.3s linear;
+}
