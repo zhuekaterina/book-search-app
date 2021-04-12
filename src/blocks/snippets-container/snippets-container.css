@@ -1,6 +1,10 @@
 .snippets-container {
     display: flex;
     flex-direction: column;
+    width: 450px;
+    margin: 0px auto;
+    max-height: 330px;
     min-height: 330px;
     align-items: center;
+    overflow-y: auto;
 }
