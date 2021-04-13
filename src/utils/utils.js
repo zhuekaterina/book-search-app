@@ -1,3 +1,3 @@
 export const apiInfo = {
-    baseUrl: 'http://openlibrary.org/',
+    baseUrl: 'https://openlibrary.org/',
 };

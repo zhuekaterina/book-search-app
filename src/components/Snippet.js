@@ -12,7 +12,7 @@ function Snippet(props) {
 
     return (
         <div className="snippet" onClick={openPopup}>
-                <img src={"http://covers.openlibrary.org/b/olid/" + props.cover + "-S.jpg"} className="snippet__cover" alt="#" />
+                <img src={"https://covers.openlibrary.org/b/olid/" + props.cover + "-S.jpg"} className="snippet__cover" alt="#" />
                 <div className="snippet__titles">
                     <p className="snippet__name">{props.title}</p>
                     <p className="snippet__author">{`by ${props.author}`}</p>
