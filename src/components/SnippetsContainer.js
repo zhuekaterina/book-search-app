@@ -13,6 +13,7 @@ function SnippetsContainer(props) {
                     <Snippet 
                         key={book.key}
                         book={book}
+                        bookPath={book.bookPath}
                         title={book.title}
                         author={book.author}
                         cover={book.coverId}

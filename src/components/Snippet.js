@@ -2,7 +2,11 @@ function Snippet(props) {
 
     function openPopup() {
         props.onOpenPopup(props.book);
-        props.onChosenBook(props.cover)
+        if(props.cover) {
+            props.onChosenBook(props.cover);
+        } else {
+            props.onChosenBook(props.bookPath);
+        }
     }
 
 

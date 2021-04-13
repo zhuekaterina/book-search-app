@@ -1,10 +1,10 @@
 import React from 'react';
-import SearchForm from './components/SearchForm';
-import Header from './components/Header';
-import SnippetsContainer from './components/SnippetsContainer';
-import Footer from './components/Footer';
-import PopupWithBook from './components/PopupWithBook';
-import { api } from './utils/api.js';
+import SearchForm from './SearchForm';
+import Header from './Header';
+import SnippetsContainer from './SnippetsContainer';
+import Footer from './Footer';
+import PopupWithBook from './PopupWithBook';
+import { api } from '../utils/api.js';
 
 function App() {
 
@@ -19,19 +19,18 @@ function App() {
     api
     .getBookList(inputValue)
     .then((data) => {
-      console.log(data);
       if (data.numFound === 0) {
         setBookListEmpty(true);
       } else {
         setBookListEmpty(false);
-        console.log(data);
         const books = data.docs.map((book) => {
           return {
             title: book.title,
             author: book.author_name || 'Unknown author',
             date: book.first_publish_year,
             coverId: book.cover_edition_key,
-            key: book.key
+            key: book.key,
+            bookPath: book.edition_key[0] || book.edition_key
           }
         })
         setBookList(books);
@@ -53,8 +52,7 @@ function App() {
         date: data.publish_date,
         isbn10: data.isbn_10 || 'unknown',
         isbn13: data.isbn_13 || 'unknown',
-        publishers: data.publishers,
-        link: data.works.key
+        publishers: data.publishers
       })
     })
     .catch((err) => {
