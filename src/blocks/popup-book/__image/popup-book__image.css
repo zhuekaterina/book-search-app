@@ -1,7 +1,14 @@
 .popup-book__image {
-    width: 100px;
-    height: 100px;
+    width: 240px;
+    height: 320px;
     background-image: url(../../../images/cover-unavailable.jpg);
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 910px) {
+    .popup-book__image {
+        width: 180px;
+        height: 230px;
+    }
 }

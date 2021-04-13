@@ -1,0 +1,13 @@
+.popup-book__titles {
+    margin-left: 20px;
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+@media screen and (max-width: 910px) {
+    .popup-book__titles {
+        margin: 10px 0px 0px 0px;
+        font-size: 14px;
+    }
+}

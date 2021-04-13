@@ -3,8 +3,37 @@
     flex-direction: column;
     width: 500px;
     margin: 0px auto;
-    max-height: 330px;
-    min-height: 330px;
+    height: 350px;
     align-items: center;
     overflow-y: auto;
+}
+
+@media screen and (max-width: 505px) {
+    .snippets-container {
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    .snippets-container {
+        width: 800px;
+    }
+}
+
+@media screen and (max-height: 599px) {
+    .snippets-container {
+        height: 300px;
+    }
+}
+
+@media screen and (min-height: 600px){
+    .snippets-container {
+        height: 48vh;
+    }
+}
+
+@media screen and (min-height: 1400px){
+    .snippets-container {
+        height: 70vh;
+    }
 }

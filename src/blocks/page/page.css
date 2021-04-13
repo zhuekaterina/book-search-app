@@ -1,6 +1,25 @@
 .page {
     background-image: url(../../images/amelie-niklas-ohlrogge-j-0olYcaihg-unsplash.jpg);
     background-size: cover;
+    min-width: 280px;
     min-height: 100vh;
     background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1279px) {
+    .page {
+        background-size: 200%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .page {
+        background-size: 300%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .page {
+        background-size: 400%;
+    }
 }

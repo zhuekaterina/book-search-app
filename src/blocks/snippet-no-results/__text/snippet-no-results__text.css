@@ -3,3 +3,9 @@
     font-size: 24px;
     margin: 0px;
 }
+
+@media screen and (max-width: 505px) {
+    .snippet-no-results__text {
+        font-size: 21px;
+    }
+}

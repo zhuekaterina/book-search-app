@@ -2,3 +2,10 @@
     margin: 0px;
     text-align: center;
 }
+
+@media screen and (max-width: 505px) {
+    .snippet__author {
+        width: 260px;
+        margin: 0px auto;
+    }
+}

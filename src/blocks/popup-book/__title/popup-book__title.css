@@ -1,0 +1,16 @@
+.popup-book__title {
+    margin: 0px 0px 10px 0px;
+}
+
+.popup-book__title:nth-child(2) {
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 910px) {
+    .popup-book__title {
+        margin-bottom: 5px;
+    }
+    .popup-book__title:nth-child(2) {
+        margin-bottom: 20px;
+    }
+}

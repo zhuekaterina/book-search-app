@@ -1,7 +1,7 @@
 .popup-book__close-button {
     position: relative;
-    top: -40px;
-    right: -30px;
+    top: -240px;
+    right: -695px;
     width: 40px;
     height: 40px;
     background-color: transparent;
@@ -10,7 +10,6 @@
     background-position: center;
     cursor: pointer;
     border: none;
-    align-self: flex-end;
 }
 
 .popup-book__close-button:hover {
@@ -24,8 +23,8 @@
 
 @media screen and (max-width: 910px) {
     .popup-book__close-button {
-        right: -30px;
-        top: 10px;
+        left: 135px;
+        top: -30px;
         background-size: 80%;
     }
 }

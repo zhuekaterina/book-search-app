@@ -1,9 +1,16 @@
 .popup-book__container {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    width: 430px;
-    min-height: 272px;
+    width: 700px;
+    min-height: 450px;
     border-radius: 10px;
     background-color: #ffffff;
+}
+
+@media screen and (max-width: 910px) {
+    .popup-book__container {
+        flex-direction: column;
+        width: 260px;
+        min-height: 500px;
+    }
 }

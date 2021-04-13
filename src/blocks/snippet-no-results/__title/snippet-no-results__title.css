@@ -4,3 +4,10 @@
     font-size: 26px;
     text-align: center;
 }
+
+
+@media screen and (max-width: 505px) {
+    .snippet-no-results__title {
+        font-size: 23px;
+    }
+}

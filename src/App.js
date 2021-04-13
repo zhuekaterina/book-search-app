@@ -31,8 +31,7 @@ function App() {
             author: book.author_name || 'Unknown author',
             date: book.first_publish_year,
             coverId: book.cover_edition_key,
-            key: book.key,
-            isbn: book.isbn
+            key: book.key
           }
         })
         setBookList(books);
@@ -52,8 +51,8 @@ function App() {
     .then((data) => {
       setSelectedBookData({
         date: data.publish_date,
-        isbn10: data.isbn_10,
-        isbn13: data.isbn_13,
+        isbn10: data.isbn_10 || 'unknown',
+        isbn13: data.isbn_13 || 'unknown',
         publishers: data.publishers,
         link: data.works.key
       })

@@ -6,3 +6,9 @@
     background-size: contain;
     background-repeat: no-repeat;
 }
+
+@media screen and (max-width: 910px) {
+    .snippet__cover {
+        margin: 20px auto;
+    }
+}

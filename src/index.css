@@ -22,4 +22,6 @@
 @import url(./blocks/popup-book/__close-button/popup-book__close-button.css);
 @import url(./blocks/popup-book/__container/popup-book__container.css);
 @import url(./blocks/popup-book/__image/popup-book__image.css);
-@import url(./blocks/popup-book/__text/popup-book__text.css);
+@import url(./blocks/popup-book/__titles/popup-book__titles.css);
+@import url(./blocks/popup-book/__title/popup-book__title.css);
+@import url(./blocks/popup-book/__title/_bold/popup-book__title_bold.css);

@@ -2,7 +2,19 @@
     margin: 0px 0px 10px 0px;
     color: black;
     min-height: 24px;
-    font-size: 16px;
     text-align: center;
     font-weight: bold;
+}
+
+@media screen and (max-width: 910px) {
+    .snippet__name {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 505px) {
+    .snippet__name {
+        margin: 0px auto 10px auto;
+        width: 240px;
+    }
 }
