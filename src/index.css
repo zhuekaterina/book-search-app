@@ -9,8 +9,12 @@
 @import url(./blocks/snippets-container/snippets-container.css);
 @import url(./blocks/snippet/snippet.css);
 @import url(./blocks/snippet/__cover/snippet__cover.css);
+@import url(./blocks/snippet/__titles/snippet__titles.css);
 @import url(./blocks/snippet/__name/snippet__name.css);
 @import url(./blocks/snippet/__author/snippet__author.css);
+@import url(./blocks/snippet-no-results/snippet-no-results.css);
+@import url(./blocks/snippet-no-results/__text/snippet-no-results__text.css);
+@import url(./blocks/snippet-no-results/__title/snippet-no-results__title.css);
 @import url(./blocks/footer/footer.css);
 @import url(./blocks/footer/__copyright/footer__copyright.css);
 @import url(./blocks/popup-book/popup-book.css);

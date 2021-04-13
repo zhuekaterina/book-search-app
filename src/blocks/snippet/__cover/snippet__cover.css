@@ -1,6 +1,7 @@
 .snippet__cover {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 70px;
+    margin: auto 20px;
     background-image: url(../../../images/cover-unavailable.jpg);
     background-size: contain;
     background-repeat: no-repeat;

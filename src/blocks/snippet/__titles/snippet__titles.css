@@ -1,0 +1,7 @@
+.snippet__titles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 10px;
+    width: 290px;
+}

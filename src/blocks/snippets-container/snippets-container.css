@@ -1,7 +1,7 @@
 .snippets-container {
     display: flex;
     flex-direction: column;
-    width: 450px;
+    width: 500px;
     margin: 0px auto;
     max-height: 330px;
     min-height: 330px;

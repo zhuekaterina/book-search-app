@@ -8,7 +8,7 @@ function SearchForm(props) {
 
     function handleKeyUp() {
         clearTimeout(timeOut);
-        timeOut = setTimeout(handleTimeoutSubmit, 1000);
+        timeOut = setTimeout(handleSubmit, 1000);
     }
 
     function handleKeyDown() {
@@ -20,20 +20,20 @@ function SearchForm(props) {
         setInputValue(evt.target.value);
     }
 
-    function handleSubmit(evt) {
-        evt.preventDefault();
+    function handleSubmit() {
         props.onSubmit(inputValue);
     }
 
-    function handleTimeoutSubmit() {
-        props.onSubmit(inputValue);
+    function handleFormSubmit(evt) {
+        evt.preventDefault();
+        handleSubmit();
     }
 
     return (
         <section className="form-container">
-            <form className="search-form" onSubmit={handleSubmit}>
+            <form className="search-form" onSubmit={handleFormSubmit}>
                 <input onKeyUp={handleKeyUp} onKeyDown={handleKeyDown} className="search-form__field" onChange={handleInputChange} placeholder="Which book do you look for?" />
-                <button className="search-form__button" onClick={handleSubmit}></button>
+                <button className="search-form__button" onClick={handleFormSubmit}></button>
             </form>
         </section>
     );
