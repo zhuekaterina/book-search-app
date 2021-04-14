@@ -1,3 +1,4 @@
+@import url(./vendor/styles/normalize.css);
 @import url(./blocks/page/page.css);
 @import url(./blocks/header/header.css);
 @import url(./blocks/header/__title/header__title.css);
@@ -15,8 +16,6 @@
 @import url(./blocks/snippet-no-results/snippet-no-results.css);
 @import url(./blocks/snippet-no-results/__text/snippet-no-results__text.css);
 @import url(./blocks/snippet-no-results/__title/snippet-no-results__title.css);
-@import url(./blocks/footer/footer.css);
-@import url(./blocks/footer/__copyright/footer__copyright.css);
 @import url(./blocks/popup-book/popup-book.css);
 @import url(./blocks/popup-book/_opened/popup__book_opened.css);
 @import url(./blocks/popup-book/__close-button/popup-book__close-button.css);

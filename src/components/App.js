@@ -2,7 +2,6 @@ import React from 'react';
 import SearchForm from './SearchForm';
 import Header from './Header';
 import SnippetsContainer from './SnippetsContainer';
-import Footer from './Footer';
 import PopupWithBook from './PopupWithBook';
 import { api } from '../utils/api.js';
 
@@ -72,9 +71,17 @@ function App() {
     <div className="page">
       <Header />
       <SearchForm onSubmit={searchBooks} />
-      <SnippetsContainer onChosenBook={getBookInfo} onOpenPopup={handleOpenPopup} books={bookList} isEmpty={bookListEmpty} inputValue={inputValueForSnippetNoResults}/>
-      <Footer />
-      <PopupWithBook isOpened={popupIsOpened} onClose={handleClosePopup} book={selectedBook} bookInfo={selectedBookData} />
+      <SnippetsContainer 
+        onChosenBook={getBookInfo}
+        onOpenPopup={handleOpenPopup}
+        books={bookList} 
+        isEmpty={bookListEmpty} 
+        inputValue={inputValueForSnippetNoResults}/>
+      <PopupWithBook 
+        isOpened={popupIsOpened} 
+        onClose={handleClosePopup} 
+        book={selectedBook} 
+        bookInfo={selectedBookData} />
     </div>
   );
 }
