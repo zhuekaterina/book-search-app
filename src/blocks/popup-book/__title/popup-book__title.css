@@ -1,5 +1,7 @@
 .popup-book__title {
     margin: 0px 0px 10px 0px;
+    width: 390px;
+    word-wrap: break-word;
 }
 
 .popup-book__title:nth-child(2) {
@@ -12,5 +14,11 @@
     }
     .popup-book__title:nth-child(2) {
         margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 505px) {
+    .popup-book__title {
+        width: 230px;
     }
 }

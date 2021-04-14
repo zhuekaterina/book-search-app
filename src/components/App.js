@@ -27,10 +27,9 @@ function App() {
           return {
             title: book.title,
             author: book.author_name || 'Unknown author',
-            date: book.first_publish_year,
             coverId: book.cover_edition_key,
             key: book.key,
-            bookPath: book.edition_key[0] || book.edition_key
+            path: book.seed[0]
           }
         })
         setBookList(books);

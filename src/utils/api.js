@@ -13,13 +13,13 @@ class Api {
     }
 
     getBookList(request) {
-        return fetch(`${this._baseUrl}search.json?title=${request}`
+        return fetch(`${this._baseUrl}/search.json?title=${request}`
         )
         .then(res => this._getResStatus(res));
     }
 
     getBook(request) {
-        return fetch(`${this._baseUrl}books/${request}.json`
+        return fetch(`${this._baseUrl}${request}.json`
         )
         .then(res => this._getResStatus(res));
     }

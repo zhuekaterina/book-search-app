@@ -12,7 +12,7 @@ function PopupWithBook(props) {
                     <p className="popup-book__title popup-book__publishers">by {props.bookInfo.publishers}</p>
                     <p className="popup-book__title popup-book__isbn">ISBN 10: {props.bookInfo.isbn10}</p>
                     <p className="popup-book__title popup-book__isbn">ISBN 13: {props.bookInfo.isbn13}</p>
-                    <a className="popup-book__title popup-book__link" href={`https://openlibrary.org/books/${props.book.bookPath}`} target="_blank" rel="noreferrer">{`https://openlibrary.org/books/${props.book.bookPath}`}</a>
+                    <a className="popup-book__title popup-book__link" href={`https://openlibrary.org${props.book.path}`} target="_blank" rel="noreferrer">{`https://openlibrary.org${props.book.path}`}</a>
                 </div>
             </figure>
         </div>
