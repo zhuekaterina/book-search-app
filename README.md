@@ -9,6 +9,7 @@
 * Дата издания
 * Издательство
 * ISBN (10 и 13)
+* Ссылка на книгу в [Open Library](https://openlibrary.org/)
 
 Информация о книгах поступает из [API Open Library](https://openlibrary.org/developers/api).
 Так как информация в Open Library хранится на английском языке, проект также оформлен на английском языке.
