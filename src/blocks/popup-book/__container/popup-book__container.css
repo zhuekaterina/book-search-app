@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     width: 700px;
-    min-height: 450px;
+    height: 450px;
     border-radius: 10px;
     background-color: #ffffff;
 }
@@ -11,6 +11,19 @@
     .popup-book__container {
         flex-direction: column;
         width: 260px;
-        min-height: 500px;
     }
 }
+
+@media screen and (max-width: 300px) {
+    .popup-book__container {
+        flex-direction: column;
+        width: 240px;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    .popup-book__container {
+        height: 400px;
+    }
+}
+

@@ -26,6 +26,12 @@
     .popup-book__close-button {
         left: 135px;
         top: -30px;
-        background-size: 80%;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .popup-book__close-button {
+        left: 125px;
+        top: -30px;
     }
 }
