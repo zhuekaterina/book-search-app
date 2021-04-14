@@ -11,14 +11,9 @@
 @media screen and (max-width: 910px) {
     .popup-book__title {
         margin-bottom: 5px;
+        width: 230px;
     }
     .popup-book__title:nth-child(2) {
         margin-bottom: 20px;
-    }
-}
-
-@media screen and (max-width: 505px) {
-    .popup-book__title {
-        width: 230px;
     }
 }
